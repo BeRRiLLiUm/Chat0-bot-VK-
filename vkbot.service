@@ -1,0 +1,15 @@
+[Unit]
+Description=VK bot
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/usr/local/sbin/venvs/vkbot
+ExecStart=/usr/local/sbin/venvs/vkbot/bin/python3.9 body/vkbot.py
+
+Environment=VIRTUAL_ENV=/usr/local/sbin/venvs/vkbot
+
+Environment=PATH=$VIRTUAL_ENV/bin:$PATH
+[Install]
+WantedBy=multi-user.target
