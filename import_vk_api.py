@@ -7,7 +7,7 @@ import datetime
 import csv
 import io
 
-token = '783d4375f4dff8fd040b6c550148b72103c9edac33663bd31549634bfee87175a93740dd4c06d110b559a'
+token = '-'
 
 logger = logging.getLogger('logger')
 
